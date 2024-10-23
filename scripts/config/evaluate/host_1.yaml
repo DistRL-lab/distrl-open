@@ -1,0 +1,56 @@
+defaults:
+  - default
+  - _self_
+
+# ===================
+# ====== basic ======
+# ===================
+parallel: "host" # "single" or "host" or "worker"
+sync_mode: "sync"  # "async", "sync"
+aggregated_save_path: '/home/distrl/logs/aggregate_1'
+synthetic: False
+
+# ===================
+# ====== path =======
+# ===================
+android_avd_home: '/home/distrl/.android/avd'
+emulator_path: '/home/distrl/.android/emulator/emulator'
+adb_path: '/home/distrl/.android/platform-tools/adb'
+cache_dir: '/home/distrl/.cache'
+assets_path: '/home/distrl/DistRL/assets/task_set'
+
+# ===================
+# ====== model ======
+# ===================
+policy_lm: '/home/distrl/AutoUI/Auto-UI-Base'
+critic_lm: 'roberta-base'
+
+# ===================
+# ====== train ======
+# ===================
+train_iterations: 400
+train_time: 100 # (in minutes) -1 for unlimited
+save_freq: 1
+
+capacity: 10000 # replay buffer size
+batch_size: 2 # replay buffer sample batch size
+warmup_iter: 0 # how many iterations to only collect data and evaluate before training
+
+# start_checkpoint_path: '/home/distrl/models/ckpts/general-off2on-digirl'
+collect_num: 128
+evaluation_num: 128
+
+# offline_data_path: null
+offline_data_path: '/home/<usrname>/data/distrl_data/warmup_trajectories_penalty.pt'
+offline_actor_iterations: 30
+offline_critic_iterations: 20
+offline_trajectory_critic_iterations: 20
+
+# ===================
+# ===== remote ======
+# ===================
+worker_temp_path: '/home/<usrname>/logs/worker'
+worker_run_path: "/home/<usrname>/DistRL/scripts"
+worker_ips: ["worker_ip1"]
+worker_username: <usrname>
+num_threads: 8

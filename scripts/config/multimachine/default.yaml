@@ -1,0 +1,49 @@
+# ===================
+# ====== task ======
+# ===================
+task_set: "general" # "general" or "webshop"
+task_split: "train" # "train" or "test"
+eval_sample_mode: "sequential" # "random" or "sequential"
+max_steps: 10
+
+# ===================
+# ====== basic ======
+# ===================
+train_mode: "online" # "offline" or "online" or "off2on"
+task_mode: "train" # "train"
+
+# ===================
+# ====== token ======
+# ===================
+huggingface_token: '<your huggingface token>'
+wandb_key: '<your wandb key>'
+gemini_key: '<your gemini key>'
+
+# ===================
+# ===== trainer =====
+# ===================
+train_algorithm: "distrl" # "distrl", "digirl" or "filteredbc"
+grad_accum_steps: 32
+epochs: 5 # number of epochs for the critic each witeration
+actor_epochs: 20 # number of epochs for training the actor each iteration
+lm_lr: 1e-4
+critic_lr: 1e-4
+max_grad_norm: 0.01
+gamma: 0.5
+tau: 0.01 #soft update parameter
+
+# ===================
+# ====== agent ======
+# ===================
+use_lora: False
+do_sample: True
+temperature: 1.0
+sequence_length: 3
+clip_rho_threshold: 1.0
+clip_pg_rho_threshold: 1.0
+max_new_tokens: 128
+
+# ===================
+# ====== log ======
+# ===================
+use_wandb: False

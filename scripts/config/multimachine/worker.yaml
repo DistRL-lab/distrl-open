@@ -1,0 +1,39 @@
+defaults:
+  - default
+  - _self_
+
+# ===================
+# ====== basic ======
+# ===================
+parallel: "worker" # "single" or "host" or "worker"
+sync_mode: "async"  # "async", "sync"
+save_path: '/home/<usrname>/logs/worker'
+avd_name: 'android_30'
+save_images: False
+
+# ===================
+# ====== path =======
+# ===================
+android_avd_home: '/home/<usrname>/.android/avd'
+emulator_path: '/home/<usrname>/.android/emulator/emulator'
+adb_path: '/home/<usrname>/.android/platform-tools/adb'
+cache_dir: '/home/<usrname>/.cache'
+assets_path: '/home/<usrname>/DistRL/assets/task_set'
+
+# ===================
+# ====== algo =======
+# ===================
+policy_lm: '/home/<usrname>/AutoUI/Auto-UI-Base'
+critic_lm: 'roberta-base'
+
+# ===================
+# ===== collect =====
+# ===================
+collect_iterations: 1
+bsize: 2 # number of emulators parallelly on the machine
+rollout_size: 2 # how many trajectories to collect between training iterations (should be multiple of bsize)
+
+# ===================
+# ====== eval =======
+# ===================
+eval_iterations: 1000

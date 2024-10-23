@@ -1,0 +1,57 @@
+You can refer or directly use some prepared prompts here:
+Webshopping:
+
+"""Task: Navigate to bestbuy.com
+Q: What should I anticipate seeing on the screenshot if I've navigated to bestbuy.com?
+A: I should expect to be on the Best Buy homepage, featuring the Best Buy logo along with highlighted products and categories. The screenshot, however, shows that I'm searching for "bestbuy.com" on Google with search suggestions, indicating that I haven't reached the actual Best Buy website.
+Status: failure""",  # 0
+
+"""Task: Visit costco.com
+Q: What should I expect to see on the screenshot if I've visited costco.com?
+A: I should expect to see the Costco homepage displaying featured products and categories typical of the Costco website. The screenshot shows that I am indeed on the Costco website, with featured products and categories visible.
+Status: success""",  # 1
+
+"""Task: Go to bestbuy.com and search for "macbook"
+Q: What should I expect to see on the screenshot if I've accessed bestbuy.com and searched for "macbook"?
+A: I should expect to be on the Best Buy website displaying search results for "macbook", which would include product listings with prices and details. The screenshot shows that I'm on the Best Buy site with search suggestions for "macbook", but it doesn't display the actual product search results.
+Status: failure""",  # 2
+
+"""Task: Visit ebay.com and search for "corsair k70"
+Q: What should I expect to see on the screenshot if I've visited ebay.com and searched for "corsair k70"?
+A: I should expect to be on the eBay website viewing search results for "corsair k70", which would include product listings with prices and details. The screenshot shows that I'm on the eBay website with search suggestions for "corsair k70", but it doesn't display the actual product listings.
+Status: failure""",  # 3
+
+"""Task: Go to walmart.com and search for "macbook air"
+Q: What should I expect to see on the screenshot if I've visited walmart.com and searched for "macbook air"?
+A: I should expect to be on the Walmart website displaying search results for "macbook air", including product listings with prices and details. The screenshot shows that I'm on Google search with suggestions for "macbook air", indicating that I'm not on the Walmart website.
+Status: failure""",  # 4
+
+"""Task: Visit walmart.com and search for "razer huntsman"
+Q: What should I expect to see on the screenshot if I've visited walmart.com and searched for "razer huntsman"?
+A: I should expect to be on the Walmart website showing search results for "razer huntsman", including product listings with details and prices. The screenshot shows that I'm on the Walmart website, but it doesn't display search results for "razer huntsman"; the search results are missing.
+Status: failure""",  # 5
+
+"""Task: Visit ebay.com and search for "lenovo thinkpad"
+Q: What should I expect to see on the screenshot if I've visited ebay.com and searched for "lenovo thinkpad"?
+A: I should expect to be on the eBay website viewing search results for "lenovo thinkpad", with multiple product listings. The screenshot shows that I'm on the eBay website and can see several search results for "lenovo thinkpad".
+Status: success""",  # 6
+
+"""Task: Visit ebay.com, search for "razer thresher", and select the first result
+Q: What should I expect to see on the screenshot if I've visited ebay.com and selected the first result of the search for "razer thresher"?
+A: I should expect to be on the eBay website viewing the detailed page of a Razer Thresher product, including a large image, price, and product details. The screenshot shows that I'm on the eBay website with multiple search results for "razer thresher", indicating that I haven't selected the first result yet.
+Status: failure""",  # 7
+
+"""Task: Visit target.com, search for "razer kraken", and select the first result
+Q: What should I expect to see on the screenshot if I've visited target.com and selected the first result of the search for "razer kraken"?
+A: I should expect to be on the Target website viewing the detailed page of a Razer Kraken product, including a large image, price, and product details. The screenshot shows that I'm on Google Search, not on the Target website.
+Status: failure""",  # 8
+
+"""Task: Visit ebay.com, search for "acer predator", and select the first result
+Q: What should I expect to see on the screenshot if I've visited ebay.com and selected the first result of the search for "acer predator"?
+A: I should expect to be on the eBay website viewing the detailed page of an Acer Predator product, including a large image, price, and product details. The screenshot shows that I'm on the eBay website with multiple search results for "acer predator", indicating that I haven't selected the first result yet.
+Status: failure""",  # 9
+
+"""Task: Go to bestbuy.com, search for "macbook", and select the first result
+Q: What should I expect to see on the screenshot if I've visited bestbuy.com and selected the first result of the search for "macbook"?
+A: I should expect to be on the Best Buy website viewing the detailed page of a MacBook product, including a large image, price, and product details. The screenshot shows that I'm on the Best Buy website with detailed information of a MacBook Air, including the price and product details.
+Status: success""",  # 10
