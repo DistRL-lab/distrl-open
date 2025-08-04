@@ -77,8 +77,8 @@ which sdkmanager
 Then install the Android emulator 28 (other versions should also work, but the offline data we provided is in version 28):
 
 ```bash
-yes | sdkmanager "platform-tools" "platforms;android-33" "emulator"
-yes | sdkmanager "system-images;android-33;google_apis;x86_64"
+yes | sdkmanager "platform-tools" "platforms;android-30" "emulator"
+yes | sdkmanager "system-images;android-30;google_apis_playstore;x86_64"
 yes | sdkmanager "build-tools;28.0.0"
 ```
 
